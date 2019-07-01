@@ -239,9 +239,50 @@
     <Compile Include="Migrations\201906251031040_MakeBirthdayColumnNullable.Designer.cs">
       <DependentUpon>201906251031040_MakeBirthdayColumnNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906270757203_AddMovieModelToDB.cs" />
+    <Compile Include="Migrations\201906270757203_AddMovieModelToDB.Designer.cs">
+      <DependentUpon>201906270757203_AddMovieModelToDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906271054583_AddGenreModelToDB.cs" />
+    <Compile Include="Migrations\201906271054583_AddGenreModelToDB.Designer.cs">
+      <DependentUpon>201906271054583_AddGenreModelToDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906271055539_AddGenrePropertyForMovieModel.cs" />
+    <Compile Include="Migrations\201906271055539_AddGenrePropertyForMovieModel.Designer.cs">
+      <DependentUpon>201906271055539_AddGenrePropertyForMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906271105103_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\201906271105103_PopulateGenresTable.Designer.cs">
+      <DependentUpon>201906271105103_PopulateGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906271144351_UpdateMovieTable.cs" />
+    <Compile Include="Migrations\201906271144351_UpdateMovieTable.Designer.cs">
+      <DependentUpon>201906271144351_UpdateMovieTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907011120158_PopulateMoviesTable.cs" />
+    <Compile Include="Migrations\201907011120158_PopulateMoviesTable.Designer.cs">
+      <DependentUpon>201907011120158_PopulateMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907011124199_MoviesModelEdited.cs" />
+    <Compile Include="Migrations\201907011124199_MoviesModelEdited.Designer.cs">
+      <DependentUpon>201907011124199_MoviesModelEdited.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907011129033_TryToMakeDateAddedFieldAutomatic.cs" />
+    <Compile Include="Migrations\201907011129033_TryToMakeDateAddedFieldAutomatic.Designer.cs">
+      <DependentUpon>201907011129033_TryToMakeDateAddedFieldAutomatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907011139574_UpdateMovieModel.cs" />
+    <Compile Include="Migrations\201907011139574_UpdateMovieModel.Designer.cs">
+      <DependentUpon>201907011139574_UpdateMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907011202407_AddedMoviesAndDetailsViews.cs" />
+    <Compile Include="Migrations\201907011202407_AddedMoviesAndDetailsViews.Designer.cs">
+      <DependentUpon>201907011202407_AddedMoviesAndDetailsViews.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -314,6 +355,7 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -358,6 +400,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906251031040_MakeBirthdayColumnNullable.resx">
       <DependentUpon>201906251031040_MakeBirthdayColumnNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906270757203_AddMovieModelToDB.resx">
+      <DependentUpon>201906270757203_AddMovieModelToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906271054583_AddGenreModelToDB.resx">
+      <DependentUpon>201906271054583_AddGenreModelToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906271055539_AddGenrePropertyForMovieModel.resx">
+      <DependentUpon>201906271055539_AddGenrePropertyForMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906271105103_PopulateGenresTable.resx">
+      <DependentUpon>201906271105103_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906271144351_UpdateMovieTable.resx">
+      <DependentUpon>201906271144351_UpdateMovieTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907011120158_PopulateMoviesTable.resx">
+      <DependentUpon>201907011120158_PopulateMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907011124199_MoviesModelEdited.resx">
+      <DependentUpon>201907011124199_MoviesModelEdited.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907011129033_TryToMakeDateAddedFieldAutomatic.resx">
+      <DependentUpon>201907011129033_TryToMakeDateAddedFieldAutomatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907011139574_UpdateMovieModel.resx">
+      <DependentUpon>201907011139574_UpdateMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907011202407_AddedMoviesAndDetailsViews.resx">
+      <DependentUpon>201907011202407_AddedMoviesAndDetailsViews.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
